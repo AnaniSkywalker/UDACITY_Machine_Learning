@@ -6,5 +6,15 @@ Created on Sun Jul 16 15:53:32 2017
 @author: Anani Assoutovi
 """
 
-import numpy as np
-import pandas as pd
+import numpy as np, os, pandas as pd, matplotlib
+
+def newFunction():
+    print('Hello Anani')
+    
+def main():
+    newFunction()
+    print('Hi')
+    #This is the main function to run all the other functions
+    
+if __name__ == '__main__':
+    main()
