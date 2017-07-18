@@ -10,7 +10,7 @@ import pandas as pd, string, pprint
 from collections import Counter
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.cross_validation import train_test_split
-
+import visuals as vs
 ds = pd.read_table('SMSSpamCollection',
                    sep='\t',
                    header=None,
@@ -36,7 +36,7 @@ print('\n')
 ds['label'] = ds.label.map({'ham':0, 'spam':1})
 print(ds.shape)
 print(ds.head())
-
+#vs.survival_stats(ds, 'spam')
 print('\n')
 
 documents = ['Hello, how are you!',

@@ -7,6 +7,7 @@ Created on Sun Jul 16 15:53:32 2017
 """
 
 import numpy as np, os, pandas as pd, matplotlib
+import visuals as vs
 
 def newFunction():
     print('Hello Anani')
